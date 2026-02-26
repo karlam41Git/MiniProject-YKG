@@ -16,7 +16,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  background: white;
+  background: rgb(150, 142, 142);
 }
 
 .logo {
@@ -31,8 +31,8 @@ nav a {
   color: #333;
 }
 
-.btn-primary {
-  background-color: #1fb6b8;
+.btn-primary{
+  background-color: #000000;
   border: none;
   padding: 10px 20px;
   color: white;
@@ -41,8 +41,9 @@ nav a {
   font-weight: bold;
 }
 
-.btn-primary:hover {
-  background-color: #17989a;
+.btn-primary:hover{
+  transform: scale(1.1);
+  transition: 0.1s ease-out;
 }
 
 .large {
@@ -51,7 +52,7 @@ nav a {
   font-size: 16px;
 }
 
-/* HERO */
+/* BANNER */
 .hero {
   display: flex;
   align-items: center;
@@ -69,14 +70,14 @@ nav a {
   color: white;
 }
 
-/* DESIGNS SECTION */
-.designs {
+/* SHOWCASE */
+.designs{
   text-align: center;
   padding: 80px 10%;
   background: white;
 }
 
-.designs h2 {
+.designs h2{
   font-size: 28px;
   margin-bottom: 40px;
 }
@@ -87,14 +88,20 @@ nav a {
   text-underline-offset: 5px;
 }
 
-.design-grid {
+.span:hover{
+  transform: scale(1.03);
+  transition: transform 0.2s ease;
+  transform-origin: left bottom;
+}
+
+.design-grid{
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-bottom: 40px;
 }
 
-.card {
+.card{
   width: 250px;
   height: 350px;
   background: #eee;
@@ -107,6 +114,12 @@ nav a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.2s ease;
+  transform-origin: left bottom;
+}
+
+.card img:hover{
+  transform: scale(1.03);
 }
 
 .explore {
