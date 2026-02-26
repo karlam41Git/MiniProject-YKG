@@ -1,4 +1,4 @@
-*{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -91,6 +91,14 @@ nav a {
   text-decoration: underline;
   text-decoration-color: #39439d;
   text-underline-offset: 5px;
+  display: inline-block;
+}
+
+.designs span:hover{
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+  transform-origin: left bottom;
+  color: #39439d;
 }
 
 .design-grid{
@@ -107,6 +115,7 @@ nav a {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: solid black 2px;
 }
 
 .card img {
@@ -131,8 +140,6 @@ footer{
     background-color: black;
     padding: 1px;
     color: white;
-    height: 100px;
-    width: 1500px;
     padding: 3%;
 }
 
