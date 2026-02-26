@@ -22,7 +22,12 @@ body {
 .logo{
   font-weight: bold;
   font-size: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  transition: letter-spacing 0.5s ease-in;
+}
+
+.logo:hover{
+  letter-spacing: 3.8px;
 }
 
 nav a {
@@ -118,5 +123,13 @@ nav a {
 
 .explore {
   padding: 15px 40px;
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: black;
+    padding: 1px;
+    color: white;
 }
 
